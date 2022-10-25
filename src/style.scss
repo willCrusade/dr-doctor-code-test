@@ -1,0 +1,115 @@
+#app {
+  background-color: $bg-grey-light;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.card {
+  background-color: $bg-white;
+  border-radius: 5px;
+  padding: 1rem;
+  min-height: 600px;
+
+  &-large {
+    max-width: 1280px;
+    width: 100%;
+
+    .card-body {
+      padding: 4rem;
+      flex-grow: 1;
+    }
+  }
+
+  &.has-info-section {
+    display: flex;
+  }
+
+  // wouldn't normally have something this specific in a generic class but time constraints are time constraints
+  &-logo {
+    max-width: 100px;
+  }
+
+  &-info {
+    border-radius: 5px;
+    width: 370px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &--primary {
+      background-color: $color-primary;
+    }
+    &--secondary {
+      background-color: $color-secondary;
+    }
+    &--dark {
+      background-color: $bg-grey-dark;
+    }
+    &--light {
+      background-color: $bg-grey-light;
+    }
+  }
+}
+
+.text {
+
+  &-primary {
+    color: $color-primary;
+  }
+
+  &-secondary {
+    color: $color-secondary
+  }
+
+  &-white {
+    color: $color-white;
+  }
+}
+
+.btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  &-primary {
+    background: $color-primary;
+    color: $color-white;
+  }
+
+  &-large {
+    padding: .6rem 2rem;
+  }
+
+  &-submit {
+    margin-top: 2rem;
+  }
+}
+
+.required {
+  color: $color-error;
+}
+
+.form-description {
+  margin-bottom: 1rem;
+
+  h3 {
+    font-weight: 300;
+    font-size: 1.4rem;
+  }
+}
+
+.form-input {
+
+  label {
+    margin-bottom: .4rem;
+  }
+
+  input {
+    padding: .4rem;
+    margin-bottom: 1rem;
+  }
+}

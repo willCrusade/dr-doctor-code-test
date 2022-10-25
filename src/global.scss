@@ -1,0 +1,27 @@
+@import "./assets/reset";
+@import "./assets/utilities";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+
+$color-primary: #46be69;
+$color-secondary: #107433;
+$color-white: #FFFFFF;
+$color-grey: #6c777d;
+
+$color-success: $color-primary;
+$color-error: #ef5350;
+
+$bg-grey: $color-grey;
+$bg-grey-light: #d6dbe7;
+$bg-grey-dark: #2e3f48;
+$bg-white: $color-white;
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    color: $color-primary;
+    font-weight: 600;
+    text-decoration: none;
+}
